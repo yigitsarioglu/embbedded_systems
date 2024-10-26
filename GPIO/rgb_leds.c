@@ -16,8 +16,7 @@
  ******************************************************************************
  */
 
-// In the code, the switch value is read from the PC0 pin. If it is 1, all user LEDs are blinked.
-// If it is 0, the LEDs are turned off.
+// Question : Board üzerindeki ledleri sırayla yakıp söndür
 
 // A green user LED is connected to the PC7
 //A blue user LED is connected to PB7.
