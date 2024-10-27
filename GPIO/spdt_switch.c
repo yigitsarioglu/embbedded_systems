@@ -40,8 +40,8 @@
 
 #define GPIOC_IDR *( (volatile uint32_t *) 0x42020810 )
 
-#define SW_OPEN 0
-#define SW_CLOSED 1<<13
+#define SW_OPEN 1<<13
+#define SW_CLOSED 0
 
 
 
@@ -91,6 +91,8 @@ void turn_off_blue(void ){
 }
 
 uint32_t check_User_pb(void){
+	//returns 0 if SW1 is closed
+	 //returns 1<<13 if SW1 is open
 	return (GPIOC_IDR & (1<<13) );
 
 }
